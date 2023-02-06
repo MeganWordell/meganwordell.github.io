@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Refuge Restroom Data Studio Project</title>
+</head>
+
+<head>
+    <style>
+      .hero {
+        background-image: url('/Users/meganwordell/Desktop/SUBWAYBATHROOM.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 25px;
+        opacity: 1
+
+      }
+      
+
+      .hero h1 {
+        text-align: left;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;  
+        opacity: 1;
+        text-shadow: 3px 3px 5px #000000;
+
+      }
+    </style>
+  </head>
+  
+    <div class="hero">
+        <h1>Sh*t Out of Luck: Bathroom Accessibility in New York City</h1>
+    </div>
+
+<body>
+
+  <br>
+
+<p> You're trudging through McCarren park, 2 Variety cold brew coffees in when the feeling hits you. You need to find a bathroom and time is running out. We've all have been there... or I hope it's not just me...<br>
+
+<br> While public bathrooms may seem like a silly story to start my semester off with, I find it’s a pretty nuanced topic. While bathroom habits and practices in the city may seem like a great equalizer, ones ability to walk into an establishment and use the restroom free of charge, anxiety, and hinderance is a mark of privilege. It’s a topic I’m interested in — especially as NYC will soon begin reopening public restrooms at certain MTA stops.  It's also something I definitely miss from my hometown, Jacksonville, Florida. While I was Christmas shopping over break and needed a restroom, it was super easy to find one, if not several, at my local outdoor mall. I also remember distictly noticing a difference in accessibility of restrooms in Jacksonville. They were significantly more spactious...and honestly much cleaner. <br>
+
+<br>For my analysis I relied on data from Refuge Restroom: a crowdsourced site with a handy API that was in desperate need of cleaning. It's definitely not the most perfect, comprehensive list, but for the general purposes of this project it was sustainable.<br>
+
+<br> First, I scraped the data using Brooklyn' latitude and longitude and added filters for ADA accessibility and gender inclusivity. I removed any repeats, or locations not in the correct bourough, and came up with the following: <br>
+
+</p>    
+<iframe title="Brooklyn reportedly has 95 bathrooms that are both gender inclusive and accessible" aria-label="Map" id="datawrapper-chart-vOjyS" src="https://datawrapper.dwcdn.net/vOjyS/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="779" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
+<div class="site-wrap">
+  
+  </div>
+
+<br><p> For Jacksonville, finding the data was fairly easy, and in terms of value count, the city had fewer reported restrooms that met standards for inclusivity and accessibility. Finding a shapefile to map the data with was much more of a challenge:</p> <br>
+
+  <iframe title="Accessible, gender inclusive restrooms in Jacksonville, Florida, are reportedly clustered in southern and central neighborhoods " aria-label="Map" id="datawrapper-chart-aMnH8" src="https://datawrapper.dwcdn.net/aMnH8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="649" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script>
+
+<div class="site-wrap">
+</div>
+</body>
+
+<br><p> And now to compare! This was definitely a major logistical challenge, since Jacksonville and Brooklyn are pretty much as different as can be. While Brooklyn's population is twice that of Jacksonville's, Jax is actually the largest city in the contiguous USA by land mass (and we're proud of it!!!). With this in mind, I decided to calculate a "potty per person" ration </p> <br>
+
+<iframe title="Jacksonville reportedly has almost twice the number of accessible, inclusive bathrooms per person than Brooklyn" aria-label="Bar Chart" id="datawrapper-chart-GAZ0E" src="https://datawrapper.dwcdn.net/GAZ0E/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="239" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+</div>
+
+</body>
+
+<head>
+    <style>
+     html, body {
+  margin: 0;
+    padding: 20px;
+}
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 7px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(180deg, #c3c6fe 0%, #d5fdf8 40%, #f8face 100%);
+  background-repeat: no-repeat;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, p {
+  color: #022935;
+  font-family: "Nunito", sans-serif;
+    font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+p:last-child {
+  margin-bottom: -6px;
+}
+
+.site-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+}
+
+section {
+  margin-bottom: 10rem;
+  padding: 4rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0 1px rgba(32, 71, 84, 0.03), 0px 0px 0 3px rgba(32, 71, 84, 0.02);
+}
+section:last-child {
+  margin-bottom: 0;
+}
+
+[data-scroll] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  transform: translateY(6rem) scale(0.93);
+  transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll=in] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.splitting .char {
+  color: transparent;
+}
+.splitting .char:after {
+  visibility: visible;
+  color: #204754;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: calc(.2s + (.04s * var(--char-index) ) );
+}
+
+[data-scroll=in] .char:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+
+  .site-wrap {
+    padding: 6rem 1rem;
+  }
+
+  section {
+    margin-bottom: 6rem;
+    padding: 2.4rem;
+  }
+  .iframe {
+    width: 80%;
+    height: 80%;
+  }
+}
+    </style>
+  </head>
+
+
+</html>
