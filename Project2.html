@@ -7,27 +7,13 @@
 <head>
     <style>
       .hero {
-        background-image: url('NYCAPT.png');
-        background-repeat: no-repeat;
+        background-image: url('Brownstone.jpg');
         background-size: cover;
         height: 500px;
-        display: flex;
-        align-items: flex-start;
         justify-content: flex-start;
-        padding: 25px;
         opacity: 1
 
       }
-      
-      .hero {
-  background-image: url("NYCAPT.png");
-  background-size: cover;
-  height: 500px;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  
-}
 
 .hero-content {
     text-align: left;
@@ -42,6 +28,8 @@
   margin: 0;
   color: rgb(255, 255, 255);
   text-shadow: 3px 3px 5px #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 .hero-subtitle {
@@ -49,13 +37,16 @@
   margin: 0;
   margin-top: 20px;
   text-shadow: 3px 3px 5px #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 80;
 }
 
 .hero-byline {
   font-size: 18px;
-  margin: 0;
-  margin-top: 20px;
+ margin-left: 5%;
+  margin-top: 10%;
   text-shadow: 3px 3px 5px #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
       
@@ -66,18 +57,22 @@
     <div class="hero-content">
       <h1 class="hero-title">Apartment Hunters: Manhattan Edition</h1>
       <h2 class="hero-subtitle">Where can the average New Yorker afford to live?</h2>
-      <h3 class="hero-byline">By Megan Wordell // 2-19-23</h3>
+
+  
     </div>
   </section>
 
 <body>
-
+<p>   By Megan Wordell // 2-19-23</p>
+  <button class="git-link">
+    <a href="https://github.com/MeganWordell"_blank >Get the Data</a>
+  </button>
 
 <p> They say that if you can make it here you can make it anywhere — but really, can anyone actually make it here? The first time I told someone my rent in the Upper West Side neighborhood of Manhattan I heard the classic:
     <br>
-
-<br> “You pay THAT much for a bedroom? Well, with that kind of money you could buy a whole farm in Meridian, Mississippi with that kind of cash!!”<br>
-
+    <br>
+<br> <b> “You pay THAT much for a bedroom? Well, with that kind of money you could buy a whole farm in Middle-of-nowhere, Nebraska with that kind of cash!!” </b><br>
+<br>
 <br> But fortunately (unfortunately?), I don’t live in the rural South. I live sandwiched between two of the most beautiful parks — Riverside and Central — and on the edge of multiple MTA stops that can take me pretty much anywhere I want to go for $2.75. I love living in NYC and my partner, Lawrence, and I are looking to put down roots here and really invest in our community.
 
 <br>
@@ -90,36 +85,38 @@
 <br>  <br>
 Are there any areas in Manhattan where one person can rent a one bedroom apartment and not be “rent burdened?”   <br>
 
-</p>    
-<iframe title="Brooklyn reportedly has 95 bathrooms that are both gender inclusive and accessible" aria-label="Map" id="datawrapper-chart-vOjyS" src="https://datawrapper.dwcdn.net/vOjyS/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="779" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<br>
 
-<div class="site-wrap">
+Using data from the U.S. Census Bureau and Street Easy, the online hub for apartment rentals and listings, I was able to compare the median income in each neighborhood to the median rent price for a one bedroom apartment in 2021. 
+
+<br>
+
+<br>I found it disappointing, but not surprising, that in almost all neighborhoods, it was impossible for the average single renter to not be rent burdened in their own neighborhood, when leasing a one bedroom apartment at the median price.
+
+<br>
+</p>    
+
   
   </div>
 
-<br><p> For Jacksonville, finding the data was fairly easy, and in terms of value count, the city had fewer reported restrooms that met standards for inclusivity and accessibility. Finding a shapefile to map the data with was much more of a challenge:</p> <br>
+<br><p> While the data show a lack of rent burdened residents in the Upper East and Upper West Side neighborhoods, I'm hesitant to believe that's true. Street Easy's description of the neighborhoods is much broader, and combines subsections, such as the Carnegie Hill and Yorkville, where the Census set's different guidelines. <br>
 
-  <iframe title="Accessible, gender inclusive restrooms in Jacksonville, Florida, are reportedly clustered in southern and central neighborhoods " aria-label="Map" id="datawrapper-chart-aMnH8" src="https://datawrapper.dwcdn.net/aMnH8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="649" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-  </script>
+  <br> Just last week NASDAQ reported that people who rent on their own, end up paying a 'singles tax' of almost $7,000 annually, with cohabitators saving collectively $14,000 on rent in the course of a year. That got me thinking: what does this mean for New Yorkers? <br> </p>
+
+
 
 <div class="site-wrap">
 </div>
 </body>
 
-<br><p> And now to compare! This was definitely a major logistical challenge, since Jacksonville and Brooklyn are pretty much as different as can be. While Brooklyn's population is twice that of Jacksonville's, Jax is actually the largest city in the contiguous USA by land mass (and we're proud of it!!!). With this in mind, I decided to calculate a restroom per person ratio</p> <br>
+<br><p> Well, it looks like we have a winner: Simply, cohabitate! In almost all neighborhoods, two individials making the area's median income monthly could afford the average one bedroom apartment. I did find some of the areas in the red pretty interesting, notably Morningside Heights. I would infer that the average income is quite low here due to the majority of students working fewer hours if any. Chinatown was also still had a stark differenece between the average monthly income doubled and median rent.</p> <br>
 
-<iframe title="Jacksonville reportedly has almost twice the number of accessible, inclusive bathrooms per person than Brooklyn" aria-label="Bar Chart" id="datawrapper-chart-GAZ0E" src="https://datawrapper.dwcdn.net/GAZ0E/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="239" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
-</div>
-<br><p> While I don't think it's 100% fair to directly compare Jacksonville and NYC, I think it's pretty interesting to see what areas are some sort of "bathroom desert" and I think it would be interesting to see if any of these metrics change once Subway bathrooms are reinstated</p> <br>
 </body>
 
 <head>
     <style>
-     html, body {
-  margin: 0;
-    padding: 20px;
+    .hero {
+
 }
 
 html {
@@ -131,7 +128,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: #cce7ef;
+  background-color: #e9f0f3;
   background-repeat: no-repeat;
 }
 
@@ -153,8 +150,12 @@ h1 {
 }
 
 p {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: auto;
+margin-left: 5%;
+margin-right: 5%;
 }
 p:last-child {
   margin-bottom: -6px;
@@ -165,7 +166,9 @@ p:last-child {
   margin: 0 auto;
   padding: 10rem 2rem;
 }
-
+body {
+  margin: 20px; /* add 20px of margin to all sides of the body text */
+}
 section {
   margin-bottom: 10rem;
   padding: 4rem;
@@ -217,6 +220,7 @@ section:last-child {
     line-height: 2.5rem;
   }
 
+
   .site-wrap {
     padding: 6rem 1rem;
   }
@@ -226,8 +230,10 @@ section:last-child {
     padding: 2.4rem;
   }
   .iframe {
-    width: 80%;
-    height: 80%;
+    width: 80px;
+    height: 80px;
+    margin-left: 5%;
+    margin-right: 5%
   }
 }
     </style>
@@ -249,10 +255,32 @@ section:last-child {
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 20px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-left: 5%;
     }
   
     .website-link:hover {
       background-color: #c1769a;
     }
   </style>
+
+
+<style>
+  .git-link {
+    background-color: #a8caef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 5%;
+  }
+
+  .git-link:hover {
+    background-color: #7684c1;
+  }
+</style>
   
+</style>
