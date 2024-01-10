@@ -24,8 +24,6 @@
       text-align: center;
       padding: 20px 0;
       margin-bottom: 20px;
-	  size: 50px;
-	
     }
 
     main {
@@ -41,23 +39,23 @@
       margin-bottom: 20px;
       display: flex; /* Adjust for content alignment */
       align-items: center; /* Align items vertically */
+      text-align: left; /* Align text to the left */
     }
 
-	.headshot {
-  width: 200px; /* Increased image size */
-  height: 200px; /* Adjust height accordingly */
-  border-radius: 50%; /* Creates a circular frame */
-  overflow: hidden; /* Hides overflowing parts of the image */
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .headshot {
+      width: 150px; /* Reduced image size */
+      height: 150px; /* Adjust height accordingly */
+      border-radius: 50%; /* Creates a circular frame */
+      overflow: hidden; /* Hides overflowing parts of the image */
+      margin-right: 20px; /* Add some space between headshot and text */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.headshot img {
-  width: 100%; /* Ensure the image fills the circular frame while maintaining aspect ratio */
-  height: auto;
-  display: block;
-  border-radius: 50%; /* Match the parent's border-radius for circular display */
-}
+    .headshot img {
+      width: 100%; /* Ensure the image fills the circular frame while maintaining aspect ratio */
+      height: auto;
+      display: block;
+    }
 
     .bio-contact h2 {
       font-family: 'American Typewriter', cursive; /* Fun cursive font */
@@ -150,19 +148,12 @@
     @media screen and (max-width: 768px) {
       .bio-contact {
         flex-direction: column; /* Change to a single column */
-        text-align: center; /* Center align content on smaller screens */
+        align-items: center; /* Center align content on smaller screens */
+        text-align: center; /* Center align text */
       }
 
       .headshot {
-        margin: 0 auto 20px; /* Center the image and add space below */
-      }
-
-      .bio-contact h2 {
-        font-size: 1.5em; /* Adjusted font size for smaller screens */
-      }
-
-      .bio-contact p {
-        font-size: 0.9em; /* Adjusted font size for smaller screens */
+        margin: 0 0 20px; /* Center the image and add space below */
       }
 
       .writing-samples {
@@ -179,7 +170,6 @@
 <body>
   <header>
     <h1>Megan Wordell: Digital Portfolio</h1>
-
   </header>
 
   <main>
@@ -189,7 +179,6 @@
       </div>
       <div>
         <h2>Welcome \U+1F44B</h2>
-		</h2>
         <p>Hi there! I'm Megan Wordell: a Brooklyn-based news producer, digital journalist, amateur baker, coffee lover, & total cat person. I'm so glad you're here!</p>
       </div>
     </section>
