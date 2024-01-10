@@ -37,9 +37,7 @@
       padding: 20px; /* Reduced padding */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-      display: flex; /* Use flexbox for layout */
-      align-items: center; /* Align items vertically */
-      justify-content: space-between; /* Evenly distribute items */
+      text-align: center; /* Center align the content */
     }
 
     .bio-contact h2 {
@@ -61,6 +59,7 @@
       height: 200px; /* Adjust height accordingly */
       border-radius: 50%; /* Creates a circular frame */
       overflow: hidden; /* Hides overflowing parts of the image */
+      margin-bottom: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -70,15 +69,88 @@
       display: block;
     }
 
-    /* Media query for smaller screens */
+    .writing-samples {
+      display: flex; /* Display samples horizontally */
+      justify-content: space-between; /* Evenly distribute samples */
+    }
+
+    .writing-sample {
+      width: 48%; /* Set width for each sample */
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      margin-bottom: 20px;
+    }
+
+    .writing-sample:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .writing-sample h2 {
+      font-family: 'Helvetica', sans-serif;
+      color: #004d40; /* Dark green for headings */
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .writing-sample p {
+      color: #444; /* Slightly darker text color */
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    .writing-sample img {
+      max-width: 100%; /* Adjust image width */
+      height: auto;
+      display: block;
+      border-radius: 8px; /* Rounded corners for the image */
+      overflow: hidden;
+      margin-bottom: 10px; /* Adjust image spacing */
+    }
+
+    .contact-info {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center align the content */
+    }
+
+    .contact-info h2 {
+      font-family: 'Helvetica', sans-serif;
+      color: #004d40; /* Dark green for headings */
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #8baf9b; /* Darker green background for links */
+      color: #fff;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .contact-info a:hover {
+      background-color: #004d40; /* Dark green on hover */
+    }
+
+    /* New styles for responsiveness */
     @media screen and (max-width: 768px) {
-      .bio-contact {
+      .writing-samples {
         flex-direction: column; /* Change to a single column */
-        align-items: center; /* Center items on smaller screens */
       }
 
-      .headshot {
-        margin-bottom: 20px; /* Add space between image and text */
+      .writing-sample {
+        width: 100%; /* Full width for samples */
+        margin-right: 0; /* Remove right margin */
       }
     }
   </style>
