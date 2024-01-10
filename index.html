@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Writing Portfolio</title>
+  <title>Megan Wordell: Digital Portfolio</title>
   <style>
     /* Resetting default styles */
     body, h1, h2, p {
@@ -23,42 +23,43 @@
       color: #fff;
       text-align: center;
       padding: 20px 0;
+      margin-bottom: 20px;
     }
 
     main {
       width: 80%;
-      margin: 20px auto;
+      margin: 0 auto; /* Center the content */
     }
 
     .bio-contact {
       background-color: #fff;
       border-radius: 8px;
-      padding: 20px;
+      padding: 40px; /* Increased padding for emphasis */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-      display: flex; /* Use flexbox for layout */
-      align-items: center; /* Vertically center the content */
+      text-align: center; /* Center align the content */
     }
 
     .bio-contact h2 {
       font-family: 'Helvetica', sans-serif;
       color: #004d40; /* Dark green for headings */
-      font-size: 1.5em;
-      margin-bottom: 10px;
+      font-size: 2em; /* Larger font size */
+      margin-bottom: 20px;
     }
 
     .bio-contact p {
       color: #444; /* Slightly darker text color */
-      font-size: 1em;
+      font-size: 1.1em; /* Larger font size */
       line-height: 1.6;
     }
 
     .headshot {
-      width: 80px; /* Adjust the width and height as needed */
-      height: 80px;
+      width: 200px; /* Increased image size */
+      height: 200px; /* Adjust height accordingly */
       border-radius: 50%; /* Creates a circular frame */
       overflow: hidden; /* Hides overflowing parts of the image */
-      margin-right: 20px; /* Add some spacing between the headshot and text */
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .headshot img {
@@ -114,17 +115,34 @@
       text-align: center; /* Center align the content */
     }
 
+    .contact-info h2 {
+      font-family: 'Helvetica', sans-serif;
+      color: #004d40; /* Dark green for headings */
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
     .contact-info a {
       display: inline-block;
       margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #8baf9b; /* Darker green background for links */
+      color: #fff;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .contact-info a:hover {
+      background-color: #004d40; /* Dark green on hover */
     }
   </style>
 </head>
 <body>
 
-
   <header>
-    <h1>Welcome to My Writing Portfolio</h1>
+    <h1>Megan Wordell: Digital Portfolio</h1>
   </header>
 
   <main>
@@ -133,31 +151,13 @@
         <img src="megan.jpeg" alt="Headshot">
       </div>
       <div>
-        <h2>Bio</h2>
-	
+        <h2>About Me</h2>
         <p>Hi there! I'm Megan Wordell: a Brooklyn-based news producer, digital journalist, amateur baker, coffee lover, & total cat person. I'm so glad you're here!</p>
       </div>
     </section>
 
-    <section class="writing-sample">
-      <a href="https://wordellmegan.medium.com/watchdog-group-files-fec-complaint-against-rep-santos-r-ny-9d5f7ca3cbc3" target="_blank" rel="noopener noreferrer">
-        <img src="vladimir-solomianyi-rKPiuXLq29A-unsplash.jpg" alt="Article Image">
-        <div>
-          <h2>Watchdog group files FEC complaint against Rep. Santos (R-NY)</h2>
-          <p>23 cannolis: that’s what New York Congressman George Santos would have had to purchase from an Italian restaurant in Little Neck, NY, to reach his reported campaign spending total of $199.99 in an evening.</p>
-        </div>
-      </a>
-    </section>
-
-    <section class="writing-sample">
-      <a href="https://wordellmegan.medium.com/nail-technicians-push-for-more-workplace-safety-measures-after-ventilation-regulations-implemented-600bca58df97" target="_blank" rel="noopener noreferrer">
-        <img src="giorgio-trovato-gb6gtiTZKB8-unsplash.jpg" alt="Article Image">
-        <div>
-          <h2>Nail technicians push for more workplace safety measures after ventilation regulations implemented</h2>
-          <p>At a small salon off Jamaica Avenue in Queens, Maria Victoriano is both a nail technician and accidental chemist. While painting nails and assembling acrylic sets for 10 hours a day for the last 16 years, she interacts with hazardous chemicals the nail industry calls the “toxic trio:” toluene, formaldehyde, and dibutyl phthalate. Numerous studies have linked these chemicals to asthma, allergies, and pregnancy loss — all of which Victoriano says she has experienced.</p>
-        </div>
-      </a>
-    </section>
+    <!-- Writing Samples Section -->
+    <!-- Include your writing samples here -->
 
     <section class="contact-info">
       <h2>Contact</h2>
@@ -169,3 +169,4 @@
 
 </body>
 </html>
+
