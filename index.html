@@ -34,14 +34,14 @@
     .bio-contact {
       background-color: #fff;
       border-radius: 8px;
-      padding: 40px; /* Increased padding for emphasis */
+      padding: 20px; /* Reduced padding */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
       text-align: center; /* Center align the content */
     }
 
     .bio-contact h2 {
-      font-family: 'Helvetica', sans-serif;
+      font-family: 'Brush Script MT', cursive; /* Fun cursive font */
       color: #004d40; /* Dark green for headings */
       font-size: 2em; /* Larger font size */
       margin-bottom: 20px;
@@ -51,6 +51,7 @@
       color: #444; /* Slightly darker text color */
       font-size: 1.1em; /* Larger font size */
       line-height: 1.6;
+      margin-bottom: 10px; /* Reduced margin */
     }
 
     .headshot {
@@ -68,15 +69,19 @@
       display: block;
     }
 
+    .writing-samples {
+      display: flex; /* Display samples horizontally */
+      justify-content: space-between; /* Evenly distribute samples */
+    }
+
     .writing-sample {
+      width: 48%; /* Set width for each sample */
       background-color: #fff;
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
       margin-bottom: 20px;
-      display: flex; /* Use flexbox for layout */
-      align-items: center; /* Vertically center the content */
     }
 
     .writing-sample:hover {
@@ -95,16 +100,15 @@
       color: #444; /* Slightly darker text color */
       font-size: 0.95em;
       line-height: 1.5;
-      flex: 1; /* Fill remaining space */
-      padding-left: 20px; /* Add some spacing between image and text */
     }
 
     .writing-sample img {
-      max-width: 50%; /* Take up half of the box width */
+      max-width: 100%; /* Adjust image width */
       height: auto;
       display: block;
       border-radius: 8px; /* Rounded corners for the image */
       overflow: hidden;
+      margin-bottom: 10px; /* Adjust image spacing */
     }
 
     .contact-info {
@@ -151,29 +155,32 @@
         <img src="megan.jpeg" alt="Headshot">
       </div>
       <div>
-        <h2>About Me</h2>
+        <h2>Welcome
+		</h2>
         <p>Hi there! I'm Megan Wordell: a Brooklyn-based news producer, digital journalist, amateur baker, coffee lover, & total cat person. I'm so glad you're here!</p>
       </div>
     </section>
 
-    <section class="writing-sample">
-      <a href="https://wordellmegan.medium.com/watchdog-group-files-fec-complaint-against-rep-santos-r-ny-9d5f7ca3cbc3" target="_blank" rel="noopener noreferrer">
-        <img src="vladimir-solomianyi-rKPiuXLq29A-unsplash.jpg" alt="Article Image">
-        <div>
-          <h2>Watchdog group files FEC complaint against Rep. Santos (R-NY)</h2>
-          <p>23 cannolis: that’s what New York Congressman George Santos would have had to purchase from an Italian restaurant in Little Neck, NY, to reach his reported campaign spending total of $199.99 in an evening.</p>
-        </div>
-      </a>
-    </section>
+    <section class="writing-samples">
+      <div class="writing-sample">
+        <a href="https://wordellmegan.medium.com/watchdog-group-files-fec-complaint-against-rep-santos-r-ny-9d5f7ca3cbc3" target="_blank" rel="noopener noreferrer">
+          <img src="vladimir-solomianyi-rKPiuXLq29A-unsplash.jpg" alt="Article Image">
+          <div>
+            <h2>Watchdog group files FEC complaint against Rep. Santos (R-NY)</h2>
+            <p>23 cannolis: that’s what New York Congressman George Santos would have had to purchase from an Italian restaurant in Little Neck, NY, to reach his reported campaign spending total of $199.99 in an evening.</p>
+          </div>
+        </a>
+      </div>
 
-    <section class="writing-sample">
-      <a href="https://wordellmegan.medium.com/nail-technicians-push-for-more-workplace-safety-measures-after-ventilation-regulations-implemented-600bca58df97" target="_blank" rel="noopener noreferrer">
-        <img src="giorgio-trovato-gb6gtiTZKB8-unsplash.jpg" alt="Article Image">
-        <div>
-          <h2>Nail technicians push for more workplace safety measures after ventilation regulations implemented</h2>
-          <p>At a small salon off Jamaica Avenue in Queens, Maria Victoriano is both a nail technician and accidental chemist. While painting nails and assembling acrylic sets for 10 hours a day for the last 16 years, she interacts with hazardous chemicals the nail industry calls the “toxic trio:” toluene, formaldehyde, and dibutyl phthalate. Numerous studies have linked these chemicals to asthma, allergies, and pregnancy loss — all of which Victoriano says she has experienced.</p>
-        </div>
-      </a>
+      <div class="writing-sample">
+        <a href="https://wordellmegan.medium.com/nail-technicians-push-for-more-workplace-safety-measures-after-ventilation-regulations-implemented-600bca58df97" target="_blank" rel="noopener noreferrer">
+          <img src="giorgio-trovato-gb6gtiTZKB8-unsplash.jpg" alt="Article Image">
+          <div>
+            <h2>Nail technicians push for more workplace safety measures after ventilation regulations implemented</h2>
+            <p>At a small salon off Jamaica Avenue in Queens, Maria Victoriano is both a nail technician and accidental chemist. While painting nails and assembling acrylic sets for 10 hours a day for the last 16 years, she interacts with hazardous chemicals the nail industry calls the “toxic trio:” toluene, formaldehyde, and dibutyl phthalate. Numerous studies have linked these chemicals to asthma, allergies, and pregnancy loss — all of which Victoriano says she has experienced.</p>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section class="contact-info">
@@ -186,4 +193,3 @@
 
 </body>
 </html>
-
