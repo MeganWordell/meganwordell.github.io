@@ -34,24 +34,11 @@
     .bio-contact {
       background-color: #fff;
       border-radius: 8px;
-      padding: 20px; /* Reduced padding */
+      padding: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-      text-align: center; /* Center align the content */
-    }
-
-    .bio-contact h2 {
-      font-family: 'American Typewriter', cursive; /* Fun cursive font */
-      color: #004d40; /* Dark green for headings */
-      font-size: 3em; /* Larger font size */
-      margin-bottom: 20px;
-    }
-
-    .bio-contact p {
-      color: #444; /* Slightly darker text color */
-      font-size: 1.1em; /* Larger font size */
-      line-height: 1.6;
-      margin-bottom: 10px; /* Reduced margin */
+      display: flex; /* Adjust for content alignment */
+      align-items: center; /* Align items vertically */
     }
 
     .headshot {
@@ -59,7 +46,7 @@
       height: 200px; /* Adjust height accordingly */
       border-radius: 50%; /* Creates a circular frame */
       overflow: hidden; /* Hides overflowing parts of the image */
-      margin-bottom: 20px;
+      margin-right: 30px; /* Margin between image and text */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -67,6 +54,20 @@
       width: 100%; /* Ensures the image fills the circular frame */
       height: auto;
       display: block;
+    }
+
+    .bio-contact h2 {
+      font-family: 'American Typewriter', cursive; /* Fun cursive font */
+      color: #004d40; /* Dark green for headings */
+      font-size: 2em; /* Slightly smaller font size */
+      margin-bottom: 10px;
+    }
+
+    .bio-contact p {
+      color: #444; /* Slightly darker text color */
+      font-size: 1em; /* Adjusted font size */
+      line-height: 1.6;
+      margin-bottom: 10px; /* Reduced margin */
     }
 
     .writing-samples {
@@ -142,8 +143,25 @@
       background-color: #004d40; /* Dark green on hover */
     }
 
-    /* New styles for responsiveness */
+    /* Media query for smaller screens */
     @media screen and (max-width: 768px) {
+      .bio-contact {
+        flex-direction: column; /* Change to a single column */
+        text-align: center; /* Center align content on smaller screens */
+      }
+
+      .headshot {
+        margin: 0 auto 20px; /* Center the image and add space below */
+      }
+
+      .bio-contact h2 {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+      }
+
+      .bio-contact p {
+        font-size: 0.9em; /* Adjusted font size for smaller screens */
+      }
+
       .writing-samples {
         flex-direction: column; /* Change to a single column */
       }
@@ -158,6 +176,7 @@
 <body>
   <header>
     <h1>Megan Wordell: Digital Portfolio</h1>
+    <img src="mw-logo.png" alt="MW Logo" style="width: 50px; height: auto;">
   </header>
 
   <main>
