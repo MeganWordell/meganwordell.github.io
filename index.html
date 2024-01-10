@@ -141,10 +141,21 @@
     .contact-info a:hover {
       background-color: #004d40; /* Dark green on hover */
     }
+
+    /* New styles for responsiveness */
+    @media screen and (max-width: 768px) {
+      .writing-samples {
+        flex-direction: column; /* Change to a single column */
+      }
+
+      .writing-sample {
+        width: 100%; /* Full width for samples */
+        margin-right: 0; /* Remove right margin */
+      }
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Megan Wordell: Digital Portfolio</h1>
   </header>
@@ -202,7 +213,6 @@
           </div>
         </a>
       </div>
-
     </section>
 
     <section class="contact-info">
@@ -212,6 +222,5 @@
       <a href="mailto:wordellmegan@gmail.com">Email</a>
     </section>
   </main>
-
 </body>
 </html>
