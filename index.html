@@ -36,7 +36,8 @@
       padding: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-      text-align: center; /* Center align the content */
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Vertically center the content */
     }
 
     .bio-contact h2 {
@@ -50,6 +51,20 @@
       color: #444; /* Slightly darker text color */
       font-size: 1em;
       line-height: 1.6;
+    }
+
+    .headshot {
+      width: 80px; /* Adjust the width and height as needed */
+      height: 80px;
+      border-radius: 50%; /* Creates a circular frame */
+      overflow: hidden; /* Hides overflowing parts of the image */
+      margin-right: 20px; /* Add some spacing between the headshot and text */
+    }
+
+    .headshot img {
+      width: 100%; /* Ensures the image fills the circular frame */
+      height: auto;
+      display: block;
     }
 
     .writing-sample {
@@ -90,6 +105,19 @@
       border-radius: 8px; /* Rounded corners for the image */
       overflow: hidden;
     }
+
+    .contact-info {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center align the content */
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin: 10px;
+    }
   </style>
 </head>
 <body>
@@ -101,11 +129,12 @@
   <main>
     <section class="bio-contact">
       <div class="headshot">
-        <img src="megan.jpeg
-		" alt="Headshot">
+        <img src="megan.jpg" alt="Headshot">
       </div>
-      <h2>Bio</h2>
-      <p>Write a brief bio about yourself here...</p>
+      <div>
+        <h2>Bio</h2>
+        <p>Hi there! I'm Megan Wordell: a Brooklyn-based news producer, digital journalist, amateur baker, coffee lover, & total cat person. I'm so glad you're here!</p>
+      </div>
     </section>
 
     <section class="writing-sample">
@@ -126,6 +155,13 @@
           <p>At a small salon off Jamaica Avenue in Queens, Maria Victoriano is both a nail technician and accidental chemist. While painting nails and assembling acrylic sets for 10 hours a day for the last 16 years, she interacts with hazardous chemicals the nail industry calls the “toxic trio:” toluene, formaldehyde, and dibutyl phthalate. Numerous studies have linked these chemicals to asthma, allergies, and pregnancy loss — all of which Victoriano says she has experienced.</p>
         </div>
       </a>
+    </section>
+
+    <section class="contact-info">
+      <h2>Contact</h2>
+      <a href="https://twitter.com/MeganWordell" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="https://linkedin.com/in/MeganWordell" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:wordellmegan@gmail.com">Email</a>
     </section>
   </main>
 
