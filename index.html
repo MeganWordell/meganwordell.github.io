@@ -42,20 +42,20 @@
       text-align: left; /* Align text to the left */
     }
 
-    .headshot {
-      width: 150px; /* Reduced image size */
-      height: 150px; /* Adjust height accordingly */
-      border-radius: 50%; /* Creates a circular frame */
-      overflow: hidden; /* Hides overflowing parts of the image */
-      margin-right: 20px; /* Add some space between headshot and text */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+	.headshot {
+  max-width: 150px; /* Set a maximum width for the headshot */
+  height: auto; /* Allow the height to adjust automatically */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .headshot img {
-      width: 100%; /* Ensure the image fills the circular frame while maintaining aspect ratio */
-      height: auto;
-      display: block;
-    }
+.headshot img {
+  max-width: 100%; /* Ensure the image fills the circular frame while maintaining aspect ratio */
+  height: auto;
+  display: block;
+}
 
     .bio-contact h2 {
       font-family: 'American Typewriter', cursive; /* Fun cursive font */
