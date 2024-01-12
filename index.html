@@ -82,9 +82,10 @@ main {
 }
 
 .writing-sample {
-  width: calc(48% - 15px); /* Adjust width and spacing */
-  margin-bottom: 30px;
-  background-color: #f5f5f5; /* Light sage green background */
+  width: calc(48% - 10px); /* Adjust width and spacing */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #fff6f9, #ffd6e3); /* Gradient from light pink to coral */
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -94,6 +95,14 @@ main {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 768px) {
+  .writing-sample {
+    width: 100%;
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+}
+
 
 .writing-sample h2 {
   font-family: 'Georgia', serif; /* Modern sans-serif font */
