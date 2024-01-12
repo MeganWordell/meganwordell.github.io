@@ -1,175 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Added meta tag for responsive design -->
   <title>Megan Wordell: Digital Portfolio</title>
   <style>
     /* Resetting default styles */
+    body,
+    h1,
+    h2,
+    p {
+      margin: 0;
+      padding: 0;
+    }
 
-/* Resetting default styles */
-body, h1, h2, p {
-  margin: 0;
-  padding: 0;
-}
+    body {
+      font-family: 'Arial', sans-serif;
+      /* Standard sans-serif font for a professional look */
+      line-height: 1.6;
+      background-color: #f3f7f0;
+      /* Sage green background */
+      color: #333;
+      margin: 0;
+    }
 
-body {
-  font-family: 'Arial', sans-serif; /* Standard sans-serif font for a professional look */
-  line-height: 1.6;
-  background-color: #f3f7f0; /* Sage green background */
-  color: #333;
-  margin: 0;
-}
+    header {
+      background-color: #8baf9b;
+      /* Darker sage green for header */
+      color: #fff;
+      /* Light text color */
+      text-align: center;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
 
-header {
-  background-color: #8baf9b; /* Darker sage green for header */
-  color: #fff; /* Light text color */
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
+    main {
+      width: 80%;
+      margin: 0 auto;
+    }
 
-main {
-  width: 80%;
-  margin: 0 auto;
-}
+    /* Bio and Contact Section */
+    .bio-contact {
+      background-color: #fff;
+      /* White background */
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
 
-/* Bio and Contact Section */
-.bio-contact {
-  background-color: #fff; /* White background */
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
+    .headshot {
+      width: 150px;
+      height: 150px;
+      border-radius: 20%;
+      /* Updated border-radius for a different shape */
+      overflow: hidden;
+      margin-right: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.headshot {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .headshot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      display: block;
+    }
 
-.headshot img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  display: block;
-}
+    .bio-contact h2 {
+      font-family: 'Arial', sans-serif;
+      /* Use the same sans-serif font for a professional heading */
+      color: #004d40;
+      /* Dark sage green for headings */
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
 
-.bio-contact h2 {
-  font-family: 'Arial', sans-serif; /* Use the same sans-serif font for a professional heading */
-  color: #004d40; /* Dark sage green for headings */
-  font-size: 2.5em;
-  margin-bottom: 15px;
-}
+    .bio-contact p {
+      color: #555;
+      /* Slightly darker text color */
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
 
-.bio-contact p {
-  color: #555; /* Slightly darker text color */
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
+    /* Writing Samples Section */
+    .writing-samples {
+      display: flex;
+      flex-wrap: wrap;
+      /* Allow samples to wrap on smaller screens */
+      justify-content: space-between;
+    }
 
-/* Writing Samples Section */
-.writing-samples {
-  display: flex;
-  flex-wrap: wrap; /* Allow samples to wrap on smaller screens */
-  justify-content: space-between;
-}
+    .writing-sample {
+      width: calc(48% - 10px);
+      /* Adjust width and spacing */
+      max-width: 400px;
+      /* Set a maximum width for responsiveness */
+      margin-bottom: 20px;
+      background-color: #fff;
+      /* White background */
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
 
-.writing-sample {
-  width: calc(48% - 10px); /* Adjust width and spacing */
-  max-width: 400px; /* Set a maximum width for responsiveness */
-  margin-bottom: 20px;
-  background-color: #fff; /* White background */
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+    .writing-sample:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
 
-.writing-sample:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+    .writing-sample h2 {
+      font-family: 'Arial', sans-serif;
+      /* Use the same sans-serif font for a professional heading */
+      color: #004d40;
+      /* Dark sage green for headings */
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
 
-.writing-sample h2 {
-  font-family: 'Arial', sans-serif; /* Use the same sans-serif font for a professional heading */
-  color: #004d40; /* Dark sage green for headings */
-  font-size: 1.2em;
-  margin-bottom: 15px;
-}
+    .writing-sample p {
+      color: #555;
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
 
-.writing-sample p {
-  color: #555;
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
+    .writing-sample img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
 
-.writing-sample img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
+    /* Contact Info Section */
+    .contact-info {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-/* Contact Info Section */
-.contact-info {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+    .contact-info h2 {
+      font-family: 'Georgia', serif;
+      color: #004d40;
+      /* Dark sage green for headings */
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
 
-.contact-info h2 {
-  font-family: 'Georgia', serif;
-  color: #004d40; /* Dark sage green for headings */
-  font-size: 1.8em;
-  margin-bottom: 20px;
-}
+    .contact-info a {
+      display: inline-block;
+      margin: 15px;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #8baf9b;
+      /* Sage green background for links */
+      color: #fff;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.contact-info a {
-  display: inline-block;
-  margin: 15px;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 5px;
-  background-color: #8baf9b; /* Sage green background for links */
-  color: #fff;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out;
-}
+    .contact-info a:hover {
+      background-color: #00695c;
+      /* Darker sage green on hover */
+    }
 
-.contact-info a:hover {
-  background-color: #00695c; /* Darker sage green on hover */
-}
+    /* Footer Section */
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      padding: 15px;
+      background-color: #004d40;
+      color: #fff;
+    }
 
-/* Footer Section */
-footer {
-  margin-top: 30px;
-  text-align: center;
-  padding: 15px;
-  background-color: #004d40;
-  color: #fff;
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .writing-sample {
-    width: 100%;
-  }
-}
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      .writing-sample {
+        width: 100%;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Megan Wordell: Digital Portfolio</h1>
@@ -207,7 +229,7 @@ footer {
         </a>
       </div>
 
-	  <div class="writing-sample">
+      <div class="writing-sample">
         <a href="https://wordellmegan.medium.com/through-court-fees-and-fines-black-and-latinx-new-yorkers-disproportionately-fund-the-criminal-b9986b908618" target="_blank" rel="noopener noreferrer">
           <img src="tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg" alt="Article Image">
           <div>
@@ -217,13 +239,12 @@ footer {
         </a>
       </div>
 
-	  <div class="writing-sample">
+      <div class="writing-sample">
         <a href="https://wordellmegan.medium.com/white-house-signs-new-bipartisan-bill-to-combat-ppp-loan-fraud-e8955024916f" target="_blank" rel="noopener noreferrer">
           <img src="mauricio-cuellar-FugvZfrmzFI-unsplash.jpg" alt="Article Image">
           <div>
             <h2>White House signs new bipartisan bill to combat PPP loan fraud</h2>
-            <p>According to President Biden, American tax dollars were being misused during the Trump administration as PPP loans were placed into the wrong hands — those not of small business owners, but fraudulent actors.
-				“I made it clear,” he said, “The watchdogs are back.”</p>
+            <p>According to President Biden, American tax dollars were being misused during the Trump administration as PPP loans were placed into the wrong hands — those not of small business owners, but fraudulent actors. "I made it clear," he said, "The watchdogs are back."</p>
           </div>
         </a>
       </div>
@@ -237,4 +258,5 @@ footer {
     </section>
   </main>
 </body>
+
 </html>
