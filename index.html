@@ -17,8 +17,8 @@
     }
 
     body {
-      font-family: 'Arial', sans-serif;
-      /* Standard sans-serif font for a professional look */
+      font-family: 'Georgia', serif;
+      /* Georgia font for a professional look */
       line-height: 1.6;
       background-color: #f3f7f0;
       /* Sage green background */
@@ -64,6 +64,7 @@
       top: -100px; /* Adjust this value to control the vertical position */
       left: 50%;
       transform: translateX(-50%);
+      z-index: 1; /* Ensure headshot is above the text */
     }
 
     .headshot img {
@@ -75,12 +76,14 @@
     }
 
     .bio-contact h2 {
-      font-family: 'Arial', sans-serif;
-      /* Use the same sans-serif font for a professional heading */
+      font-family: 'Georgia', serif;
+      /* Use Georgia font for a professional heading */
       color: #004d40;
       /* Dark sage green for headings */
       font-size: 2.5em;
       margin-bottom: 15px;
+      position: relative;
+      z-index: 2; /* Ensure text is above the headshot */
     }
 
     .bio-contact p {
@@ -118,8 +121,8 @@
     }
 
     .writing-sample h2 {
-      font-family: 'Arial', sans-serif;
-      /* Use the same sans-serif font for a professional heading */
+      font-family: 'Georgia', serif;
+      /* Use Georgia font for a professional heading */
       color: #004d40;
       /* Dark sage green for headings */
       font-size: 1.2em;
